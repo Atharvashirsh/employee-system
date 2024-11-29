@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Employee System</h1>
+      <div id="count">
+        <h2>Employee Count : <span id="emp-count"></span></h2>
+      </div>
+    </div>
+
+    <div id="data-input">
+      <form id="emp-form" onsubmit="event.preventDefault(); addEmployee();">
+        <h2 class="text-subheading">Add new Employee</h2>
+        <table>
+          <tr class="input-row">
+            <td>
+              <label for="empid" class="input-label">ID</label>
+            </td>
+            <td>
+              <input required type="number" placeholder="Enter employee ID" id="empid" class="input-field" autocomplete="off" />
+            </td>
+          </tr>
+          <tr class="input-row">
+            <td>
+              <label for="empname" class="input-label">Name</label>
+            </td>
+            <td>
+              <input required type="text" placeholder="Enter employee name" id="empname" class="input-field" autocomplete="off" />
+            </td>
+          </tr>
+          <tr class="input-row">
+            <td>
+              <label for="empcity" class="input-label">City</label>
+            </td>
+            <td>
+              <input required type="text" placeholder="Enter City" id="empcity" class="input-field" autocomplete="off" />
+            </td>
+          </tr>
+        </table>
+        <div id="actions-bar">
+          <button class="action-button" type="submit">Add Employee</button>
+          <button class="action-button" type="button" onclick="displayEmployee()">Display Employees</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="show-emp" class="invisible">
+      <h2 class="text-subheading">Employee Details</h2>
+      <table id="emp-table">
+        <thead>
+          <tr class="table-row-head">
+            <td><h2>ID</h2></td>
+            <td><h2>Name</h2></td>
+            <td><h2>City</h2></td>
+          </tr>
+        </thead>
+        <tbody id="emp-table-body"></tbody>
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

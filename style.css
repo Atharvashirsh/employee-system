@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.invisible {
+  display: none;
+}
+
+.heading {
+  margin: auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid;
+  height: 60px;
+  width: 80%;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  margin: 0;
+}
+
+.text-subheading {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+#count {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 100%;
+}
+
+#data-input {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.input-label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.input-field {
+  margin: 5px 10px;
+  width: 150%;
+  height: 30px;
+  font-size: 1rem;
+}
+
+#actions-bar {
+  width: fit-content;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-button {
+  margin-right: 20px;
+  border: 3px solid;
+  outline: none;
+  width: 220px;
+  height: 50px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: rgb(255, 203, 203);
+  border-radius: 10px;
+}
+
+.action-button:hover {
+  box-shadow: 3px 3px black;
+  background-color: rgb(251, 223, 223);
+}
+
+.action-button:active {
+  background-color: rgb(246, 205, 205);
+}
+
+#show-emp {
+  margin: 50px auto;
+  width: 80%;
+}
+
+#emp-table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+#emp-table td {
+  border: 2px solid;
+  margin: 0;
+  text-align: center;
+}
+.table-row-head {
+  background-color: aquamarine;
+}
+.table-row {
+  background-color: rgb(228, 255, 227);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
